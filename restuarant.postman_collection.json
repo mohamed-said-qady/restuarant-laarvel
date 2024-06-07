@@ -1,0 +1,1000 @@
+{
+	"info": {
+		"_postman_id": "a7e694a3-8f83-4f3b-9ba3-faf96ad467d9",
+		"name": "restuarant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26833255",
+		"_collection_link": "https://crimson-eclipse-889390.postman.co/workspace/team-helwan~6b971ebb-d8b0-4e43-a039-52d28db55ae7/collection/26833255-a7e694a3-8f83-4f3b-9ba3-faf96ad467d9?action=share&source=collection_link&creator=26833255"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Restaurant",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Branch",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "name update",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "0122222222",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "20 udpated egypt",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "branch_id",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "active",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "waiter",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/employee/8",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"employee",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "2|eZ9kfqPQ6OpER52v2BVcAzWW6WveAauBVagngyJg500e107a",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Table",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/table",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/table/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "location",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "free",
+									"type": "text"
+								},
+								{
+									"key": "branch_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/table",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/table/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/table/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Table Seat",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/table/seat",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table",
+								"seat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "kid",
+									"type": "text"
+								},
+								{
+									"key": "table_id",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/table/seat/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"table",
+								"seat",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu Section",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu Item",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "restaurant update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{$url}}/v1/restaurant/1",
+							"host": [
+								"{{$url}}"
+							],
+							"path": [
+								"v1",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "1|FXXVlZvgKYNSv83UjfNSwmSrCNam5yPZ27IvH6dLf3bd2c7a",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "$url",
+			"value": "http://127.0.0.1:8000/api"
+		}
+	]
+}
